@@ -42,7 +42,7 @@ function cityInputEntered(cityName) {
          <div class="weather-today p-3 mb-3 pl-4">
             <h1>${currentData.name} ${currentDay} <img src="${iconURL + currentData.weather[0].icon}.png"></h1>
             <p>Temperature: ${Math.round(currentData.main.temp)}ºC</p>
-            <p>Wind Speed: ${currentData.wind.speed} KPH</p>
+            <p>Wind: ${currentData.wind.speed} KPH</p>
             <p>Humidity: ${currentData.main.humidity}%</p>
           </div>
           <h3 id="forecast-headline">5-Day Forecast:</h3>
@@ -60,6 +60,7 @@ function cityInputEntered(cityName) {
                 <p class="forecast-date"><b>${forecastDay.format('D/M/YYYY')}</b></p>
                 <img src="${iconURL + forecastObj.weather[0].icon}.png">
                 <p>Temp: ${Math.round(forecastObj.main.temp)}ºC</p>
+                <p>Wind: ${forecastObj.wind.speed} KPH</p>
                 <p>Humidity: ${forecastObj.main.humidity}%</p>
                 </div>
               `);
