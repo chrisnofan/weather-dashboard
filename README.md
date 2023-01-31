@@ -36,6 +36,9 @@ The application will retrieve the 5-day weather forecast for that city and displ
 
 ## Screenshot
 
+![Screenshot of 5-Day Weather Forecast Application](./assets/weather-app-demo.PNG)
+
+
 
 
 
